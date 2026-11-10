@@ -1,0 +1,32 @@
+{
+  "name": "sifop-ipam-frontend",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite --host 127.0.0.1",
+    "dev:api": "vite --host 127.0.0.1 --mode api",
+    "build": "vue-tsc -b && vite build",
+    "build:api": "vue-tsc -b && vite build --mode api",
+    "preview": "vite preview --host 127.0.0.1",
+    "test": "playwright test",
+    "site": "node scripts/site.mjs",
+    "site:nouveau": "node scripts/nouveau-site.mjs"
+  },
+  "dependencies": {
+    "@fontsource-variable/inter": "5.3.0",
+    "lucide-vue-next": "0.468.0",
+    "vue": "3.5.44",
+    "vue-router": "4.6.4"
+  },
+  "devDependencies": {
+    "@playwright/test": "1.61.1",
+    "@types/node": "^22.0.0",
+    "@vitejs/plugin-vue": "6.0.7",
+    "prettier": "3.6.2",
+    "typescript": "~5.9.3",
+    "vite": "7.3.7",
+    "vue-tsc": "3.2.5"
+  },
+  "description": "Site vitrine d'établissement scolaire (Vue 3) — fonctionne seul avec des fake data, ou connecté à l'API Node.js"
+}
